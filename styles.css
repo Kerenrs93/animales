@@ -23,7 +23,7 @@ body {
   cursor: pointer;
   flex: 0.5;
   position: relative;
-  margin: 10px;
+  margin: 5px;
   transition: flex 0.9s ease-in;
 }
 .imagenes.active {
