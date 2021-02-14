@@ -9,10 +9,7 @@ body {
   height: 100vh; /*Viewport Height hay mas espacio de izquierda a derecha*/
   overflow: hidden; /*para que no le caiga nada encima*/
   margin: 0;
-}
-.main {
-  display: flex;
-  width: 90vw;
+  background-color: #faebd7;
 }
 
 .imagenes {
@@ -20,17 +17,26 @@ body {
   position: center;
   background-repeat: no-repeat;
   height: 80vh;
+  width: 500px;
   border-radius: 50px;
-  color: white;
+  color: rgb(78, 78, 197);
   cursor: pointer;
   flex: 0.5;
   position: relative;
   margin: 10px;
   transition: flex 0.9s ease-in;
 }
-
-.imagenes h3 {
-  font-size: 10px;
+.imagenes.active {
+  flex: 5;
+  transition: opacity 0.3s ease-in 0.5s;
+}
+.imagenes.active p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.imagenes p {
+  font-size: 25px;
+  font-family: "Ballet", cursive;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -38,11 +44,7 @@ body {
   opacity: 0;
 }
 
-.imagenes.active {
-  flex: 5;
-  transition: opacity 0.3s ease-in 0.5s;
-}
-.imagenes.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.main {
+  display: flex;
+  width: 90vw;
 }
