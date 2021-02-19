@@ -1,0 +1,27 @@
+body {
+  /* background-color: rgb(65, 55, 55); */
+}
+
+.tarjeta {
+  max-width: 210px;
+  max-height: 210px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(5, 182, 5);
+  background-color: rgb(65, 55, 55);
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-color: lightcoral;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.tarjeta h1 {
+  color: white;
+}
